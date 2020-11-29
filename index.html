@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="default.css" >
+	<title>Tip Calculator</title>
+</head>
+	<body>
+		<section id="main" >
+		<h1> QUICK TIP </h1>
+		<section>
+			<div class="bill">	
+				<label>Bill</label>
+				<input type="number" placeholder="Your Bill" id="yourbill" />
+			</div>
+			<div>
+				<div class="space-between">
+				<label>Select tip</label>
+				<span id="tipPercent">0 %</span>
+			</div>
+			<input class="range" type="range" value="0" max="100" id="tipInput"/>
+		</div>
+		<div class="space-between">
+			<span>Tip:</span>
+			<span id="tipValue">0</span>
+		</div>
+		<hr/>
+		<div  class="space-between">
+			<span id="totalspan">Total:</span>
+			<span id="totalWithTip">0</span>
+		</div>
+		</section>
+		
+		<section>
+			<div>
+		
+				<div class="space-between">
+					<label>Split</label>
+					<span id="splitValue">1 person</span>
+				</div>
+				<input class="range" type="range"	min="1" max="10" value="1" id="splitInput"/>
+			</div>
+		
+			<div  class="space-between">
+				  <span>Tip each: </span>
+				 <span id="tipEach">0</span> 
+				 </div>  
+		
+			<div  class="space-between">
+				  <span id="eachspan">Bill each: </span>
+				 <span id="billEach">0</span> 
+				 </div> 
+				 <div id="printBill" > 
+			  <a href="#modal_popup" class="genBill"> Receipt </a>  
+				   </div> 
+		</section>
+		</section>
+
+		<section id="modal_popup" class="modal">
+		
+		<div class="back">
+			<a href="#" class="cancel">Back</a>
+		</div>
+	<div class="model_content">
+		
+			<h2 class="receipt">Your Receipt</h2>
+			 <div  class="space-bet">
+				  <span id="rspan">Total Bill: </span>
+				 <span id="recptotal">0</span> 
+				 </div>
+		
+					<div class="space-bet">
+				 
+				   <span id="respan">Bill Each: </span>
+				 <span id="recpEach">0</span> 
+		
+				 </div>  
+			<hr>
+		
+		<div class="thanks">
+			<p >
+				Thanks for using my website. Hope to see you again. Enjoy!.
+			</p>
+		</div>
+			<div class="modal_footer">
+				Made by:  <a  href="https://twitter.com/hey_its_tay11?s=08" target='_blank'>@hey_its_tay11</a>
+			</div>
+	</div>
+		
+		</section>
+		<script src="tip.js"  type="text/javascript"></script>
+		</body>
+</html>
